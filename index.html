@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Site</title>
+  <style>
+    body { margin: 0; display: flex; justify-content: center; 
+           align-items: center; min-height: 100vh; background: #000; }
+    img { max-width: 100%; max-height: 100vh; }
+  </style>
+</head>
+<body>
+  <img id="pic">
+  <script>
+    const images = ["dawn_film.png", "school.png"];
+    const pick = images[Math.floor(Math.random() * images.length)];
+    document.getElementById("pic").src = pick;
+  </script>
+</body>
+</html>
